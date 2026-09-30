@@ -27,7 +27,7 @@
 /* Begin PBXGroup section */
 		D10000000000000000000001 = {isa = PBXGroup; children = (D10000000000000000000002,D10000000000000000000003,D10000000000000000000000004); sourceTree = "<group>"; };
 		D10000000000000000000002 /* VolumeBoost500 */ = {isa = PBXGroup; children = (B10000000000000000000001,B10000000000000000000002,B10000000000000000000003,B10000000000000000000004); path = VolumeBoost500; sourceTree = "<group>"; };
-		D10000000000000000000003 /* Products */ = {isa = PBXGroup; children = (B10000000000000000000005); name = Products; sourceTree = "<group>"; };
+		D10000000000000000000003 /* Products */ = {isa = PBXGroup; children = (B10000000000000000000000005); name = Products; sourceTree = "<group>"; };
 		D10000000000000000000004 /* Empty */ = {isa = PBXGroup; children = (); name = "Supporting Files"; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -49,7 +49,7 @@
 
 /* Begin XCBuildConfiguration section */
 		F10000000000000000000003 = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = VolumeBoost500; PRODUCT_BUNDLE_IDENTIFIER = com.volumeboost500.app; INFOPLIST_FILE = VolumeBoost500/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SDKROOT = iphoneos; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; GENERATE_INFOPLIST_FILE = NO; }; name = Debug; };
-		F10000000000000000000004 = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.volumeboost500.app; INFOPLIST_FILE = VolumeBoost500/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; SDKROOT = iphoneos; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; GENERATE_INFOPLIST_FILE = NO; }; name = Release; };
+		F10000000000000000000004 = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = VolumeBoost500; PRODUCT_BUNDLE_IDENTIFIER = com.volumeboost500.app; INFOPLIST_FILE = VolumeBoost500/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; SDKROOT = iphoneos; CODE_SIGNING_ALLOWED = NO; CODE_SIGNING_REQUIRED = NO; GENERATE_INFOPLIST_FILE = NO; }; name = Release; };
 		F10000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000003,F10000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		F10000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (F10000000000000000000003,F10000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 /* End XCBuildConfiguration section */
