@@ -5,16 +5,15 @@ struct ContentView: View {
     @State private var volume: Double = 100
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            WebView(volume: $volume)
-                .ignoresSafeArea(.all)
-
-            VolumeControl(volume: $volume)
-                .padding(.horizontal, 12)
-                .padding(.bottom, 10)
-        }
-        .ignoresSafeArea(.all)
-        .background(Color.black)
+        WebView(volume: $volume)
+            .background(Color.black)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                VolumeControl(volume: $volume)
+                    .padding(.horizontal, 12)
+                    .padding(.top, 8)
+                    .padding(.bottom, 6)
+                    .background(.ultraThinMaterial)
+            }
     }
 }
 
@@ -49,7 +48,7 @@ private struct VolumeControl: View {
             .foregroundStyle(.white.opacity(0.65))
         }
         .padding(.horizontal, 14)
-        .padding(.vertical, 11)
+        .padding(.vertical, 10)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -88,7 +87,9 @@ struct WebView: UIViewRepresentable {
         let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.navigationDelegate = context.coordinator
         webView.uiDelegate = context.coordinator
-        webView.scrollView.contentInsetAdjustmentBehavior = .never
+        webView.scrollView.contentInsetAdjustmentBehavior = .automatic
+        webView.scrollView.contentInset = .zero
+        webView.scrollView.scrollIndicatorInsets = .zero
         webView.isOpaque = false
         webView.backgroundColor = .black
         webView.scrollView.backgroundColor = .black
