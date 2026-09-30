@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDisplayName</key><string>VolumeBoost500</string>
-    <key>CFBundleIdentifier</key><string>com.volumeboost500.app</string>
+    <key>CFBundleIdentifier</key><string>com.volumeboost500.newapp</string>
     <key>CFBundleName</key><string>VolumeBoost500</string>
     <key>CFBundlePackageType</key><string>APPL</string>
     <key>CFBundleShortVersionString</key><string>1.0</string>
